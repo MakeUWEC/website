@@ -1,0 +1,220 @@
+/*
+    MakeUWEC Student Organization Website at https://makeuwec.org
+
+    Author: Cole Pearson <cole@colejpearson.com>
+    Version: Nov 11 2019
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DEFAULT STYLES */
+
+html {
+    background-color: #e8e8e8;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 30px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+}
+
+a > svg {
+    height: 15px;
+    width: 15px;
+}
+
+.inline-code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+img {
+    margin: 20px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER STYLES */
+
+header {
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+
+    background-color: black;
+    color: #e8e8e8;
+}
+
+.header-left > h1 {
+    margin-bottom: 0;
+}
+
+.header-left > h1 > a {
+    text-decoration: none;
+}
+
+.header-left > p {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.social {
+    display: flex;
+}
+
+.social > li {
+    margin: 2px;
+    list-style: none;
+}
+
+.social > li > a > svg {
+    height: 15px;
+    width: 15px;
+    fill: #e8e8e8;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav > li {
+    margin: 30px 20px 20px 20px;
+    list-style: none;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+}
+
+/* PAGE BODY STYLES */
+
+.page-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page-body {
+    width: 600px;
+    margin: 30px;
+}
+
+/* SIDEBAR STYLES */
+
+.page-sidebar {
+    width: 300px;
+    margin: 30px;
+}
+
+.sidebar-element {
+    margin: 10px;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.sidebar-element > p {
+    margin-bottom: 0;
+}
+
+.sidebar-element > p > a {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER STYLES */
+
+footer > p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 1080px) {
+    /* HEADER STYLES */
+
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* PAGE STYLES */
+    
+    .page-body, .page-sidebar {
+        width: 100%;
+    }
+
+    .page-sidebar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-element {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    header {
+        height: auto;
+        justify-content: center;
+    }
+}
