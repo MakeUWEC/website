@@ -1,0 +1,10 @@
+.alert {
+  margin-top: 20px;
+  border-top: 10px dashed #eca400;
+  padding: 10px;
+  background-color: #27476e;
+}
+
+.alert * {
+  color: #ffffff;
+}

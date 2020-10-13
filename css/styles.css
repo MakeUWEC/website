@@ -1,0 +1,267 @@
+/* FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css?family=Arvo:700,700i|Source+Code+Pro|Source+Sans+Pro:400,400i,700,700i&display=swap');
+
+/* PRIMARY STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font: 16px 'Source Sans Pro', sans-serif;
+  line-height: 22px;
+  padding: 5px 10px 5px 10px;
+}
+
+li {
+  font: 16px 'Source Sans Pro', sans-serif;
+  line-height: 22px;
+  margin-left: 40px;
+  padding: 0 10px 0 10px;
+}
+
+h2 {
+  font: bold 28px 'Arvo', serif;
+  padding: 10px 0 10px 0;
+  color: #006992;
+}
+
+h3 {
+  font: bold 24px 'Arvo', serif;
+  padding: 10px 10px 10px 10px;
+  color: #27476e;
+}
+
+h4 { /* Currently only used in report.html, but may be needed when the site is updated in the future. */
+  font: bold 20px 'Arvo', serif;
+  padding: 10px 10px 10px 10px;
+  color: #27476e;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  color: #ffffff;
+  background-color: #777777;
+  padding: 1px 7px 1px 7px;
+  border-radius: 5px;
+  font: 14px 'Source Code Pro', monospace;
+}
+
+img {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto 10px auto;
+}
+
+.invisible {
+  display: none;
+}
+
+/* HEADER STYLES */
+
+header {
+  color: #ffffff;
+  background-color: #27476e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > h1 {
+  order: -2;
+  font: 700 36px 'Source Sans Pro', sans-serif;
+  margin-top: 10px;
+}
+
+header > h1 > a {
+  text-decoration: none;
+}
+
+header > .primary-nav {
+  max-width: 440px;
+}
+
+header > .primary-nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header > .primary-nav > ul > li {
+  list-style: none;
+  border-top: 1px solid #eca400;
+  margin: 5px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
+  min-width: 200px;
+}
+
+header > .primary-nav > ul > li > a {
+  text-decoration: none;
+  width: max-content;
+}
+
+header > .social {
+  order: -1;
+}
+
+header > .social > ul {
+  display: flex;
+}
+
+header > .social > ul > li {
+  list-style: none;
+  margin-left: 0;
+  padding: 5px;
+}
+
+header > .social > ul > li > a > svg {
+  fill: #eca400;
+}
+
+/* PAGE STYLES */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.page-body {
+  border-bottom: 1px solid #454545;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* SIDEBAR STYLES */
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar > section {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.sidebar > section > p {
+  padding: 0 5px 0 5px;
+}
+
+.sidebar > section > h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 5px 0 0;
+}
+
+.sidebar > section > h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 5px 0 5px;
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 900px) {
+  /* PRIMARY STYLES */
+
+  img {
+    width: 400px;
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  /* HEADER STYLES */
+
+  header {
+    flex-direction: row;
+  }
+
+  header > h1 {
+    order: 0;
+    font-size: 48px;
+    padding-left: 10px;
+    margin-top: 0;
+    flex-grow: 1;
+  }
+
+  header > .primary-nav {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  header > .primary-nav > ul > li {
+    border-top: none;
+    border-left: 1px solid #eca400;
+    border-bottom: 1px solid #eca400;
+  }
+
+  header > .social > ul {
+    flex-direction: column;
+    padding: 4px 5px 4px 10px;
+  }
+
+  header > .social > ul > li {
+    padding: 0;
+    margin-left: 5px;
+    height: 26px;
+  }
+
+  header > .social > ul > li > a > svg {
+    width: 20px;
+  }
+
+  /* PAGE STYLES */
+
+  .page-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .page-body {
+    border: none;
+    width: calc(100% - 300px);
+    max-width: 800px;
+  }
+
+  /* SIDEBAR STYLES */
+
+  .sidebar {
+    width: 340px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .sidebar > section {
+    border-top: 1px solid #454545;
+    border-left: 1px solid #454545;
+    padding: 20px;
+  }
+}
+
+/* PRINT STYLES */
+
+@media only print {
+  header {
+    padding-bottom: 10px;
+    color: #27476e;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eca400;
+  }
+
+  header > .social {
+    display: none;
+  }
+
+  header> .primary-nav {
+    display: none;
+  }
+}

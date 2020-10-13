@@ -1,0 +1,6 @@
+.google-cal {
+  margin-left: 10px;
+  border: none;
+  width: calc(100% - 10px);
+  height: 600px;
+}

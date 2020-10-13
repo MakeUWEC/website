@@ -1,0 +1,67 @@
+.google-form {
+  margin-left: 10px;
+  border: none;
+  width: calc(100% - 10px);
+  height: 900px;
+}
+
+/* #contact-form {
+  margin: 20px 0 20px 0;
+  border-top: 5px solid #eca400;
+  border-bottom: 5px solid #eca400;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form .form-row {
+  margin: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#contact-form .form-row input {
+  background-color: transparent;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #27476e;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#contact-form .form-row textarea {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #27476e;
+  padding: 10px;
+  font-size: 14px;
+  height: 400px;
+  resize: none;
+}
+
+#contact-form .form-row input::placeholder {
+  color: #454545;
+}
+
+#contact-form .form-row label {
+  font: 16px 'Source Sans Pro', sans-serif;
+  color: #27476e;
+}
+
+#contact-form .form-row button {
+  font: 16px 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+  background-color: #27476e;
+  width: 150px;
+  height: 40px;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form .form-row button:hover {
+  background-color: #4778b5;
+} */
